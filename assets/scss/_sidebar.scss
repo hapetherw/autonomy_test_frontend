@@ -1,0 +1,15 @@
+.b-sidebar {
+  width: calc(70vw);
+  top: $header-mobile-size;
+  .sidebar-div {
+    height: 530px;
+  }
+}
+.faq-container {
+  .b-sidebar {
+    top: 70px;
+  }
+  .sidebar-div {
+    height: 550px;
+  }
+}

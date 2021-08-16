@@ -1,0 +1,24 @@
+.modal-dialog {
+  //margin: 0;
+  @media (max-width: 990px) {
+    margin: 0;
+    max-width: 100%;
+  }
+  .modal-content {
+    @media (max-width: 990px) {
+      height: 100vh;
+    }
+    border-radius: 0.8rem;
+    .modal-header {
+      border-bottom: 0;
+    }
+    .modal-footer {
+      border-top: 0;
+    }
+  }
+}
+.modal.fade.show {
+  @media (max-width: 990px) {
+    padding-left: 0 !important;
+  }
+}

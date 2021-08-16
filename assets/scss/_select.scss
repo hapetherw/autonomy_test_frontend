@@ -1,0 +1,34 @@
+.provider-select {
+  .vs__dropdown-toggle {
+    background: #404040;
+    padding-top: 4px;
+  }
+  .vs__dropdown-menu {
+    //background: #404040;
+  }
+  .vs__dropdown-menu > li {
+    color: #ebebeb;
+  }
+  .vs__dropdown-option.vs__dropdown-option--selected {
+    color: #ffc900 !important;
+  }
+}
+.sign-select {
+  .vs__dropdown-toggle {
+    background: var(--primary);
+    padding-top: 4px;
+    border-color: var(--gray);
+  }
+  .vs__dropdown-menu {
+    //background: #404040;
+  }
+  .vs__dropdown-menu > li {
+    color: #ebebeb;
+  }
+  .vs__dropdown-option.vs__dropdown-option--selected {
+    color: #ffc900 !important;
+  }
+}
+.vs__dropdown-toggle > .vs__selected-options > .vs__search {
+  color: var(--info) !important;
+}

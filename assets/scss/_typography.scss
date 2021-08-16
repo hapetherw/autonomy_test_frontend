@@ -1,0 +1,56 @@
+h6, .h6 {
+  font-size: pt2rem(14);
+  font-weight: $font-weight-normal;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  @include media-breakpoint-down(sm) {
+    font-size: pt2rem(10);
+  }
+  @include media-breakpoint-down(md) {
+    font-size: pt2rem(12);
+  }
+  @include media-breakpoint-down(lg) {
+    font-size: pt2rem(13);
+  }
+}
+h5, .h5 {
+  font-size: pt2rem(16);
+  font-weight: $font-weight-normal;
+  @include media-breakpoint-down(sm) {
+    font-size: pt2rem(12);
+  }
+  @include media-breakpoint-down(md) {
+    font-size: pt2rem(14);
+  }
+  @include media-breakpoint-down(lg) {
+    font-size: pt2rem(15);
+  }
+}
+
+h4, .h4 {
+  font-size: pt2rem(18);
+  font-weight: $font-weight-normal;
+  @include media-breakpoint-down(sm) {
+    font-size: pt2rem(14);
+  }
+  @include media-breakpoint-down(md) {
+    font-size: pt2rem(15);
+  }
+  @include media-breakpoint-down(lg) {
+    font-size: pt2rem(17);
+  }
+}
+
+h7, .h7 {
+  font-size: pt2rem(12);
+  font-weight: $font-weight-normal;
+  @include media-breakpoint-down(sm) {
+    font-size: pt2rem(9);
+  }
+  @include media-breakpoint-down(md) {
+    font-size: pt2rem(10);
+  }
+  @include media-breakpoint-down(lg) {
+    font-size: pt2rem(11);
+  }
+}

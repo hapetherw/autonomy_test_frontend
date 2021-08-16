@@ -1,0 +1,104 @@
+.game-group-nav.nav {
+  flex-wrap: nowrap;
+  .nav-item {
+    //margin-left: 1rem;
+    //margin-right: 1rem;
+    margin-top: 0.3rem;
+  }
+  .nav-item > .nav-link {
+    color: white;
+    opacity: 0.8;
+    white-space: nowrap !important;
+  }
+  .nav-item > .nav-link:hover {
+    color: white;
+    opacity: 1;
+  }
+  .nav-item > .nav-link.active {
+    color: white;
+    opacity: 1;
+    border-bottom: 2px solid #ffc900;
+  }
+}
+
+.header-nav.nav {
+  .nav-item {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .nav-item > .nav-link {
+    color: white;
+    opacity: 0.8;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-color: var(--info);
+    border-right: 1px solid;
+  }
+  .promotion-nav-item.nav-item > .nav-link {
+    border-right: 0;
+  }
+  .nav-item > .nav-link:hover {
+    color: white;
+    opacity: 1;
+  }
+  .nav-item > .nav-link.active {
+    color: var(--secondary);
+    opacity: 1;
+    border-color: var(--info);
+  }
+}
+
+.management-nav.nav {
+  .nav-item {
+    border-color: var(--light);
+    border-bottom: 1px solid;
+    //font-size: .9rem;
+    text-transform: uppercase;
+  }
+  .nav-item:hover {
+  }
+  .nav-item > .nav-link {
+    background-color: #141414;
+    padding-bottom: ($spacer * 0.6);
+    padding-top: ($spacer * 0.6);
+    color: var(--secondary);
+    border-color: var(--info);
+    h6 {
+      margin-bottom: 4px;
+      margin-top: 4px;
+    }
+  }
+  .nav-item > .nav-link:hover {
+    color: var(--info);
+    background-color: #1a1a1a;
+  }
+  .nav-item > .nav-link.active {
+    color: var(--white);
+    border-color: var(--info);
+    background-color: #1a1a1a;
+  }
+}
+
+.faq-nav.nav {
+  .nav-item {
+    font-weight: 400;
+    font-size: .9rem;
+  }
+  .nav-item:hover {
+  }
+  .nav-item > .nav-link {
+    padding-bottom: .6rem;
+    padding-top: .6rem;
+    color: #5f5f5f;
+    border-bottom: 1px solid #cacbcc;
+  }
+  .nav-item > .nav-link:hover {
+    background-color: rgba(255,255,255,.3);
+  }
+  .nav-item > .nav-link.active {
+    border-left-color: var(--secondary) !important;
+    border-left: solid 3px;
+    background-color: rgba(255,255,255,.6);
+    color: black;
+  }
+}
