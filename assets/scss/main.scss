@@ -1,19 +1,9 @@
 @import '~bootstrap/scss/bootstrap.scss';
 @import '~bootstrap-vue/src/index.scss';
-@import "~vue-select/src/scss/vue-select.scss";
 @import "variables";
 @import "functions";
-@import "dropdown";
-@import "vue-flux";
-@import "nav-item";
-@import "container";
-@import "select";
 @import "button";
 @import "modal";
-@import "typography";
-@import "sidebar";
-@import "../flags.css";
-@import "../icon-material.css";
 
 html {
   overflow-y: auto;

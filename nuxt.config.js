@@ -3,10 +3,9 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   publicRuntimeConfig: {
     SERVER_BASE_URL: process.env.SERVER_URL || 'http://127.0.0.1:3000',
-    SOCKET_BASE_URL: process.env.SOCKET_URL || 'http://127.0.0.1:2053',
     IS_DEV: process.env.NODE_ENV || 'development'
   },
-  mode: 'universal',
+  mode: 'spa',
   server: {
     host: '0.0.0.0',
     port: 3002
@@ -17,7 +16,7 @@ export default {
   */
   target: 'server',
   head: {
-    title: 'Triangular Arbitrage',
+    title: 'Autonomy test',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -42,17 +41,7 @@ export default {
   plugins: [
     '~/plugins/axios',
     '~/plugins/filters',
-    { src: '~/plugins/breakpoint.js', mode: 'client' },
-    { src: '~/plugins/country-flag.js', mode: 'client' },
-    { src: '~/plugins/vue-flux.js', mode: 'client' },
-    { src: '~/plugins/vue-select.js' },
-    { src: '~/plugins/infinite-loading.js' },
-    { src: '~/plugins/v-calendar.js', mode: 'client' },
-    { src: '~/plugins/spinner.js' },
-    { src: '~/plugins/mq.js' },
-    { src: '~/plugins/socket.io.js', mode: 'client' },
-    { src: '~/plugins/qrcode.js', mode: 'client' },
-    { src: '~/plugins/switch.js', mode: 'client' }
+    { src: '~/plugins/mq.js' }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -91,6 +80,7 @@ export default {
       ],
       vueI18n: i18n
     }],
+    'nuxt-web3',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa'
   ],
@@ -123,10 +113,6 @@ export default {
       target: process.env.SERVER_URL || 'http://127.0.0.1:3000'
       // target: 'http://192.168.8.118:3000'
     }
-    // '/socket.io': {
-    //   target: process.env.SOCKET_URL || 'http://127.0.0.1:2053'
-    //   // target: 'http://192.168.8.118:3000'
-    // }
   },
   auth: {
     strategies: {
